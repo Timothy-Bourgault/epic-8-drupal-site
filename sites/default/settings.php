@@ -23,3 +23,15 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
+$databases['default']['default'] = array (
+  'database' => 'epic-8-drupal-site',
+  'username' => 'admin',
+  'password' => 'password',
+  'prefix' => '',
+  'host' => '127.0.0.1',
+  'port' => '8889',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['hash_salt'] = '5nuQvHfteJHBI1cIlNVql6rouTNVncUgfIvuOBsNe0RfJspTNLzdb1gDadYYstXbXtBODmVuWQ';
+$settings['install_profile'] = 'standard';
